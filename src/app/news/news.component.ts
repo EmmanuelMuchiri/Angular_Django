@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-news',
+  templateUrl: './news.component.html',
+  styleUrls: ['./news.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class NewsComponent implements OnInit {
   articles;
+  
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
@@ -15,7 +17,6 @@ export class DashboardComponent implements OnInit {
       console.log(data);
       this.articles = data['articles'];
     });
-
   }
 
 }

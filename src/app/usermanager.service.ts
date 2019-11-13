@@ -9,7 +9,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class UsermanagerService {
 
-  login_url = 'http://127.0.0.1:8000/api/login/';
+  login_url = 'https://jambopay.herokuapp.com/api/login/';
   private options = { headers: new HttpHeaders().set('Content-Type', 'application/json') };
 
 

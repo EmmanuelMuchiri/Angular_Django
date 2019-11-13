@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { JwtModule } from '@auth0/angular-jwt';
 import { UsermanagerService } from './usermanager.service';
+import { NewsComponent } from './news/news.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -21,7 +22,8 @@ export function tokenGetter() {
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
